@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template: 300px 300px 300px/repeat(12, 1fr)
+}
+
+.grid-item{
+    display: grid;
+    grid-column: 3/11;
+    grid-template: 50px 1fr 50px/repeat(8, 1fr)
+}
+
+.grid-item:nth-child(odd){
+
+    background-color: blanchedalmond;
+}
+
+.entry-grid-item{
+    grid-area: 2/2/3/8;
+}
+
+.entry-grid-item:nth-child(odd){
+
+    background-color: rgb(172, 107, 10);
+}
