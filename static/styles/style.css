@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    
+    color: #fff;
     grid-template: 300px 300px 300px/repeat(12, 1fr)
 }
 
