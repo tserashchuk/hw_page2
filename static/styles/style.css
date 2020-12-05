@@ -1,25 +1,101 @@
-.container{
+.grid-system{
     display: grid;
-    color: #fff;
-    grid-template: 300px 300px 300px/repeat(12, 1fr)
+    grid-template: repeat(8, auto) / repeat(12, 1fr);
 }
 
-.grid-item{
+.grid-content{
+    grid-column: 3 / 11;
     display: grid;
-    grid-column: 3/11;
-    grid-template: 50px 1fr 50px/repeat(8, 1fr)
+    grid-template: repeat(3,1fr)/repeat(8,1fr);
 }
 
-.grid-item:nth-child(odd){
 
-    background-color: blanchedalmond;
+
+/* стили первого экрана*/
+.intro{
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../img/Rectangle.png);
 }
 
-.entry-grid-item{
-    grid-area: 2/2/3/8;
+.mod-intro {
+    grid-template: repeat(3,1fr)/repeat(8,1fr);
+}
+.logo {
+    font-family: Post No Bills Jaffna SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: 30px;
 }
 
-.entry-grid-item:nth-child(odd){
 
-    background-color: rgb(172, 107, 10);
+.menu{
+    grid-column: 3 / 9;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+.menu-item{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.head-h1{
+    grid-area: auto / span 8;
+    align-self: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+
+}
+
+.head-contacts{
+    grid-column: auto / span 4;
+    align-self: center;
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.head-contacts > span > img {
+    fill:#ffffff;
+    height: 21px;
+}
+
+.head-adress{
+ justify-self: right;
+ margin-right:50px;
+ 
+}
+.head-phone{
+    justify-self: left;
+    margin-left:50px;
+}
+
+
+/* второй блок стили */
+.short {
+    padding-top: 90px;
+    background-color: #242B33;
+}
+
+.short img {
+    height: 50px;
+    padding: 30px;
+} 
+ 
+.short-tem {
+ grid-column-start: 3;
 }
