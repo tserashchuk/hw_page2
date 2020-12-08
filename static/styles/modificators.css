@@ -11,3 +11,19 @@
     text-align: center;
     align-self: center;
 }
+
+.w-100 {
+    grid-column: auto / span 8;
+}
+
+.p-100{
+    padding-top: 100px;
+}
+
+.icon-50{
+    width: 50px;
+}
+
+.icon-70{
+    width: 70px;
+}
