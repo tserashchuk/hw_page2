@@ -13,11 +13,33 @@
 }
 
 .w-100 {
-    grid-column: auto / span 8;
+    grid-column: 1 / span 8;
+    /* grid-column: 1 / -1; */
+}
+
+.p-60 {
+    padding-top: 60px;
 }
 
 .p-100{
     padding-top: 100px;
+}
+
+.p-120{
+    padding-top: 120px;
+}
+
+.pb-180 {
+    padding-bottom: 180px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+
+.mb-50{
+    margin-bottom: 50px;
 }
 
 .icon-50{
